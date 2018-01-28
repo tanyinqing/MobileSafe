@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:background="#8866ff00"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="55dip"
+        android:text="高级工具" />
+
+    <TextView 
+        android:onClick="numberAddressQuery"
+        android:clickable="true"
+        android:background="@drawable/button"
+        android:gravity="center_vertical"
+        android:drawableLeft="@android:drawable/ic_menu_camera"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:text="电话归属地查询"
+        />
+    <TextView 
+        android:onClick="smsBackup"
+        android:clickable="true"
+        android:background="@drawable/button"
+        android:gravity="center_vertical"
+        android:drawableLeft="@android:drawable/ic_menu_camera"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:text="短信的备份"
+        />
+     <TextView 
+        android:onClick="smsRestore"
+        android:clickable="true"
+        android:background="@drawable/button"
+        android:gravity="center_vertical"
+        android:drawableLeft="@android:drawable/ic_menu_camera"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:text="短信的还原"
+        />
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
