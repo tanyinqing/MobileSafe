@@ -2,13 +2,16 @@ package com.qzd.mobilesafe.domain;
 
 import android.graphics.drawable.Drawable;
 
+/**
+ * 进程信息的业务实体
+ */
 public class TaskInfo {
 	//标识当前item是否被选中
 	private boolean checked;//是否选中
 	private Drawable icon;//图标
 	private String name;//命名
 	private long memsize;//内存占用
-	private boolean userTask;//用户进程
+	private boolean userTask;//用户进程 true是用户进程
 	private String packname;//包名
 	
 	public boolean isChecked() {

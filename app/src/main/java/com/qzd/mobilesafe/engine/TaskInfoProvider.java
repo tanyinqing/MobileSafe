@@ -24,15 +24,16 @@ public class TaskInfoProvider {
 		ActivityManager am = (ActivityManager) context.getSystemService(context.ACTIVITY_SERVICE);
 		//所有正在使用的用户的进程的集合 
 		List<RunningAppProcessInfo> processInfos = am.getRunningAppProcesses();
+//		这个是获得的所有进程的信息的集合
 		List<TaskInfo> taskInfos = new ArrayList<TaskInfo>();
 		//遍历这个集合  然后从这个进程中获取数据
 		for (RunningAppProcessInfo processInfo : processInfos) {
 			TaskInfo taskInfo = new TaskInfo();
-			//得到进程的包名
+			//得到进程的包名 也是进程名
 			String packname = processInfo.processName;
 			taskInfo.setPackname(packname);
 			//进程占用的内存  可以同时获得多个进程的占用内存的信息
-			// import android.os.Debug.MemoryInfo; 导包注意
+			// import android.os.Debug.MemoryInfo; 导包注意 可以一次获得多个进程的信息
 			MemoryInfo[] momoryInfos = am.getProcessMemoryInfo(new int[]{processInfo.pid});
 			//本地 虚拟机 等 多个内存 单位 kb *1024转化long类型
 			long memsize = momoryInfos[0].getTotalPrivateDirty()*1024l;//得到某个进程总的内存大小
