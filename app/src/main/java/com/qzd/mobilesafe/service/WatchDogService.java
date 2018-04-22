@@ -17,8 +17,8 @@ import com.qzd.mobilesafe.db.dao.ApplockDao;
  * 看门狗服务 监视系统程序的运行状态
  */
 public class WatchDogService extends Service {
-	private ActivityManager am;
-	private boolean flag;
+	private ActivityManager am;//得到进程管理器
+	private boolean flag;//标志变量
 	private ApplockDao dao;
 	private InnerReceiver innerReceiver;
 	private String tempStopProtectPackname;
@@ -65,10 +65,13 @@ public class WatchDogService extends Service {
 		intent = new Intent(getApplicationContext(),EnterPwdActivity.class);
 		//服务是没有任务栈信息的.在服务开启activity,要指定这个activity运行的任务栈
 		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+		// 让一段程序循环的不停执行  嵌入式设备
 		new Thread(){
 			public void run() {
 				while(flag){
+					// 得到当前正在运行的任务栈 后来的在上面
 					List<RunningTaskInfo> infos = am.getRunningTasks(1);
+					//栈顶的activity 的包名
 					String packname = infos.get(0).topActivity.getPackageName();
 					if(!protectPacknames.contains(packname)){
 						//当前应用需要保护,蹦出来,弹出来一个输入密码的界面
@@ -76,7 +79,7 @@ public class WatchDogService extends Service {
 						intent.putExtra("packname",packname);
 						startActivity(intent);
 					}
-					try {
+					try { //睡眠一段时间
 						Thread.sleep(20);
 					} catch (InterruptedException e) {
 						e.printStackTrace();

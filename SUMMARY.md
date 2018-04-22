@@ -4,8 +4,9 @@
 
 -  android常用代码
     * [android判断网络状态](resource/Android常用代码/android判断网络状态.txt)
+    * [判断GPS是否打开并打开它](resource/Android常用代码/判断GPS是否打开并打开它.txt)
 * 重要的知识点
-* [Studio中创建AIDL](resource/Studio中创建AIDL.md)
+    * [Studio中创建AIDL](resource/Studio中创建AIDL.md)
 * 第十章
 * 46_清理全部的缓存
 * 45_利用反射获取缓存和应用程序大小信息
@@ -16,7 +17,7 @@
 * 40_sliding抽屉的简单实用
 * 39_流量统计的原理
 * 第九章
-* 39_程序锁的完成
+    * [39_程序锁的完成](app/src/main/java/com/qzd/mobilesafe/service/WatchDogService.java)
 * 38_最近任务列表移除
 * 37_利用activity的启动模式修复bug
 * 36_问题处理
