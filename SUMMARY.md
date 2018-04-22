@@ -1,6 +1,8 @@
 
 * [导读](README.md)
 * 重要的知识点
+### android常用代码
+    - [android判断网络状态](resource/android判断网络状态.txt)
 * [Studio中创建AIDL](resource/Studio中创建AIDL.md)
 * 第十章
 * 46_清理全部的缓存
