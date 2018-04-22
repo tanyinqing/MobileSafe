@@ -30,8 +30,8 @@ import com.qzd.mobilesafe.utils.SystemInfoUtils;
  * 进程管理
  */
 public class TaskManagerActivity extends Activity {
-	private TextView tv_process_count;
-	private TextView tv_mem_info;
+	private TextView tv_process_count;//进程的数量
+	private TextView tv_mem_info;//剩余内存和总内存的信息
 	private TextView tv_status;
 	//活动管理器
 	private ActivityManager am;
@@ -67,6 +67,7 @@ public class TaskManagerActivity extends Activity {
 		availRam = SystemInfoUtils.getAvailRam(this);//获取可用内存
 		totalRam = SystemInfoUtils.getTotalRam(this); //获取总内存
 		tv_process_count.setText("运行中进程:"+runningProcessCount+"个");
+//		把内存的信息格式化
 		tv_mem_info.setText("剩余/总内存:"+Formatter.formatFileSize(this,availRam)+"/"+Formatter.formatFileSize(this, totalRam));
 		fillData();
 		//ListView滚动事件

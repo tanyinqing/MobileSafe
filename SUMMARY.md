@@ -2,11 +2,21 @@
 * [导读](README.md)
 
 
+* 第八章
+* 32_省电优化
+* 31_进程清理的小控件
+* 30_widget小控件
+* 29_锁屏清理进程和定时清理进程
+* 28_进程管理器实现
+* 27_带checkbox的listview
+* 26_获取手机正在运行的进程信息
+    * [25_获取内存信息](app/src/main/java/com/qzd/mobilesafe/utils/SystemInfoUtils.java)
 -  android常用代码
     * [android判断网络状态](resource/Android常用代码/android判断网络状态.txt)
     * [判断GPS是否打开并打开它](resource/Android常用代码/判断GPS是否打开并打开它.txt)
 * 重要的知识点
     * [Studio中创建AIDL](resource/Studio中创建AIDL.md)
+    * [linx指令](resource/linx指令.md)
 * 第十章
 * 46_清理全部的缓存
 * 45_利用反射获取缓存和应用程序大小信息
@@ -24,15 +34,6 @@
 * 35_程序锁的主体功能完成
 * 34_程序锁工作的原理
 * 33_程序锁的ui届满
-* 第八章
-* 32_省电优化
-* 31_进程清理的小控件
-* 30_widget小控件
-* 29_锁屏清理进程和定时清理进程
-* 28_进程管理器实现
-* 27_带checkbox的listview
-* 26_获取手机正在运行的进程信息
-* 25_获取内存信息
 * 第七章
 * 24_创建快捷图标
 * 23_应用程序的分享
