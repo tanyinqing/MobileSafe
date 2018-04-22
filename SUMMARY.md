@@ -3,7 +3,7 @@
 
 
 -  android常用代码
-    * [android判断网络状态](resource/android判断网络状态.txt)
+    * [android判断网络状态](resource/Android常用代码/android判断网络状态.txt)
 * 重要的知识点
 * [Studio中创建AIDL](resource/Studio中创建AIDL.md)
 * 第十章
