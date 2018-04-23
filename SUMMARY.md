@@ -14,7 +14,7 @@
     * [25_获取内存信息](app/src/main/java/com/qzd/mobilesafe/utils/SystemInfoUtils.java)
 -  android常用代码
     * [android判断网络状态](resource/Android常用代码/android判断网络状态.txt)
-    * [判断GPS是否打开并打开它](resource/Android常用代码/判断GPS是否打开并打开它.txt)
+    * [判断GPS是否打开并打开它](resource/Android常用代码/判断GPS是否打开并打开它.md)
 * 测试类
     * [测试进程信息的类](app/src/main/java/com/qzd/mobilesafe/test/TestTaskInfoProvider.java)
 * 重要的知识点
