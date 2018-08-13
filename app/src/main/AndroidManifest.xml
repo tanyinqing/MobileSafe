@@ -67,6 +67,8 @@
         <activity android:name="com.qzd.mobilesafe.AppManagerActivity"/>
         <activity android:name="com.qzd.mobilesafe.TaskManagerActivity"/>
         <activity android:name="com.qzd.mobilesafe.TaskSettingActivity"/>
+        <activity android:name="com.qzd.mobilesafe.EnterPwdActivity"
+            android:launchMode="singleInstance"/>
         <!-- 服务 -->
         <service android:name="com.qzd.mobilesafe.service.GPSService" />
         <service android:name="com.qzd.mobilesafe.service.AddressService" />

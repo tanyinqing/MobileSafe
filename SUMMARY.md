@@ -2,15 +2,20 @@
 * [导读](README.md)
 
 
-* 第八章
+* 软件管理
+* 进程管理
+    * [获取手机正在运行的进程信息的列表](app/src/main/java/com/qzd/mobilesafe/engine/TaskInfoProvider.java)
+    * [进程信息的业务实体](app/src/main/java/com/qzd/mobilesafe/domain/TaskInfo.java)
+* 设置中心
+* 其他
+
+
 * 32_省电优化
 * 31_进程清理的小控件
 * 30_widget小控件
 * 29_锁屏清理进程和定时清理进程
 * 28_进程管理器实现
 * 27_带checkbox的listview
-    * [进程信息的业务实体](app/src/main/java/com/qzd/mobilesafe/domain/TaskInfo.java)
-    * [26_获取手机正在运行的进程信息](app/src/main/java/com/qzd/mobilesafe/engine/TaskInfoProvider.java)
     * [25_获取内存信息](app/src/main/java/com/qzd/mobilesafe/utils/SystemInfoUtils.java)
 -  android常用代码
     * [android判断网络状态](resource/Android常用代码/android判断网络状态.txt)
@@ -33,6 +38,7 @@
     * [39_程序锁的完成](app/src/main/java/com/qzd/mobilesafe/service/WatchDogService.java)
 * 38_最近任务列表移除
 * 37_利用activity的启动模式修复bug
+    * [39_程序锁的完成](app/src/main/java/com/qzd/mobilesafe/service/WatchDogService.java)
 * 36_问题处理
 * 35_程序锁的主体功能完成
 * 34_程序锁工作的原理
